@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>LAYR — Physical Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- GLASS NAV ------------------------------------------ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <img src="media/logo.svg" alt="LAYR logo" class="logo" />
+      <nav class="nav-links">
+        <a href="#spin-section">Model</a>
+        <a href="#downloads">Files</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO ------------------------------------------------ -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="media/hero-animation.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero-overlay">
+      <h1><img src="media/logo.svg" alt="LAYR logo" class="hero-logo" sizes="very-large" /></h1>
+      <p>Physical systems shaped by digital process</p>
+    </div>
+  </section>
+
+  <!-- INTRO ----------------------------------------------- -->
+  <section class="intro parallax" id="about">
+    <p class="intro-lead">
+      LAYR is a design‑led hardware studio exploring the intersection of
+      industrial form, small‑batch manufacturing, and digital representation.
+    </p>
+
+    <p>
+      The studio operates at the boundary between speculative product design
+      and physically fabricated artefacts. Objects are developed with
+      consumer‑grade manufacturing constraints in mind from inception, allowing
+      material behaviour, tolerances, and assembly logic to inform form,
+      proportion, and detail.
+    </p>
+
+    <p>
+      Rather than pursuing mass‑manufactured scalability, LAYR focuses on
+      limited‑run, fabrication‑aware products where process is treated as an
+      active design layer rather than a downstream concern.
+    </p>
+
+    <p class="intro-lead">Design Principles</p>
+
+    <ul class="principles-list">
+      <li>
+        <strong>Fabrication‑aware by default</strong><br />
+        All objects are designed with explicit awareness of consumer‑grade
+        manufacturing processes, particularly FDM 3D printing.
+      </li>
+
+      <li>
+        <strong>Constraint as material</strong><br />
+        Limitations in tooling, tolerance, and assembly are treated as productive
+        inputs rather than obstacles to be hidden or abstracted away.
+      </li>
+
+      <li>
+        <strong>Small‑batch over mass appeal</strong><br />
+        Products are conceived for limited production runs, prioritising clarity
+        of intent and physical presence over scalability.
+      </li>
+
+      <li>
+        <strong>Digital representation as artefact</strong><br />
+        Animation, web presentation, and documentation are considered integral
+        outputs of the design process, not purely promotional layers.
+      </li>
+    </ul>
+  </section>
+
+  ``
+  <!-- MODEL ------------------------------------------------ -->
+  <section id="spin-section">
+    <video id="spin-video" muted playsinline preload="auto" src="/media/product-spin.mp4">
+    </video>
+  </section>
+
+  <section class="insights">
+  <h2 style="font-weight: lighter;">Studio Focus</h2>
+
+  <div class="insights-grid">
+    <article class="glass-card">
+      <h3 style="font-weight: lighter;">Fabrication & 3D Printing</h3>
+      <p>
+        Objects are developed specifically for consumer‑grade FDM printing,
+        with PETG used as a baseline material. Wall thicknesses, tolerances,
+        and fastening strategies are informed by iterative physical testing
+        rather than idealised CAD assumptions.
+      </p>
+      <p>
+        This approach prioritises repeatability and reliability over surface
+        perfection, embracing the material qualities and limitations inherent
+        to small‑batch digital fabrication.
+      </p>
+    </article>
+
+    <article class="glass-card">
+      <h3 style="font-weight: lighter;">Industrial & Cultural References</h3>
+      <p>
+        LAYR draws inspiration from retromodern industrial design, early
+        consumer electronics, and utilitarian hardware objects where function
+        is visually legible.
+      </p>
+      <p>
+        Rather than pursuing novelty for its own sake, form language is
+        developed through proportion, restraint, and an emphasis on
+        long‑term durability.
+      </p>
+    </article>
+
+    <article class="glass-card">
+      <h3 style="font-weight: lighter;">Digital Representation</h3>
+      <p>
+        Digital outputs are treated as artefacts in their own right.
+        Animation, web presentation, and documentation form a parallel layer
+        of the design process rather than a promotional afterthought.
+      </p>
+      <p>
+        Scroll‑based interaction is used to encourage slow inspection,
+        mirroring how a physical object might be handled and examined.
+      </p>
+    </article>
+  </div>
+</section>
+
+
+  <!-- DOWNLOADS ------------------------------------------- -->
+  <section id="downloads">
+    <h2>Fabrication Files</h2>
+
+    <p>
+      Enclosure systems are optimised for consumer-grade FDM printing with PETG,
+      balancing durability, tolerance reliability, and surface quality.
+    </p>
+
+    <div class="download-grid">
+      <a href="downloads/enclosure-top.stl" download>
+        Enclosure — Upper Shell<br />
+        <span>STL · PETG optimised</span>
+      </a>
+
+      <a href="downloads/enclosure-bottom.stl" download>
+        Enclosure — Lower Shell<br />
+        <span>STL · PETG optimised</span>
+      </a>
+
+      <a href="downloads/screws.stl" download>
+        Custom Fasteners<br />
+        <span>STL · FDM-safe threads</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© LAYR — Small-batch hardware, digitally mediated</p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
