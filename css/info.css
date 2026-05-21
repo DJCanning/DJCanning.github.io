@@ -15,7 +15,7 @@
 body {
   margin: 0;
   font-family: "Poppins", system-ui, sans-serif;
-  background: radial-gradient(
+  background: linear-gradient(
     var(--navy),
     var(--deep-blue)
   );
