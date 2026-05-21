@@ -1,8 +1,13 @@
 :root {
-  --navy: #00033D;
-  --deep-blue: #0600AB;
-  --violet: #977DFF;
+  
+:root {
   --lavender: #F2E6EE;
+  --soft-pink: #FFCCF2;
+  --violet: #977DFF;
+  --deep-blue: #0600AB;
+  --navy: #00033D;
+  --white: #fcfcfc;
+
 }
 
 * {
@@ -12,14 +17,19 @@
 body {
   margin: 0;
   font-family: "Poppins", system-ui, sans-serif;
-  background: linear-gradient(
-    180deg,
+ 
+body {
+  background: radial-gradient(
     var(--navy),
-    var(--deep-blue)
+    var(--deep-blue),
+    var(--white)
   );
+}
+
   color: var(--lavender);
   line-height: 1.6;
 }
+
 
 /* HERO ------------------------------------------------ */
 .hero {
@@ -41,7 +51,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.55;
 }
 
 .hero-logo {
@@ -58,15 +68,15 @@ body {
   justify-content: flex-end;
   padding: 4rem 2rem;
 
-  background: linear-gradient(to top,
-      rgba(0, 3, 61, 0.85),
-      rgba(0, 3, 61, 0));
+  background: linear-gradient(
+    to top,
+    rgba(0, 3, 61, 0.9),
+    rgba(0, 3, 61, 0.1)
+  );
 }
 
 .hero-overlay h1 {
   margin: 0;
-  font-size: clamp(3rem, 7vw, 5rem);
-  letter-spacing: 0.12em;
 }
 
 .hero-overlay p {
@@ -74,6 +84,20 @@ body {
   color: var(--soft-pink);
   opacity: 0.9;
 }
+
+/* EXTRA DEPTH (this is what makes it look “nice”) */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(6, 0, 171, 0.2),
+    rgba(0, 0, 0, 0.4)
+  );
+  pointer-events: none;
+}
+
 
 /* CONTENT */
 .content {
