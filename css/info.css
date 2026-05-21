@@ -137,6 +137,29 @@ li {
   transform: scale(0.98);
 }
 
+.card-thumb {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.thumb-wrapper {
+  position: relative;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+
+
 /* FOOTER */
 .footer {
   padding: 2rem;
