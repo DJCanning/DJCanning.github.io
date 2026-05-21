@@ -227,6 +227,32 @@ li {
   max-width: 400px;
 }
 
+/* ABOUT SECTION -------------------------------------- */
+
+#about {
+  background: linear-gradient(180deg,
+      var(--deep-blue),
+      var(--navy));
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Image styling */
+.about-image img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
 
 /* FOOTER */
 .footer {
