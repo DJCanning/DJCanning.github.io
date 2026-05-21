@@ -139,6 +139,8 @@ li {
 
 .card-thumb {
   width: 100%;
+  height: 160px;        /* 👈 controls size */
+  object-fit: cover;    /* 👈 crops nicely */
   border-radius: 10px;
   margin-bottom: 1rem;
   display: block;
