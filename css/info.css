@@ -198,6 +198,35 @@ li {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
 }
 
+/* POSTER SECTION -------------------------------------- */
+
+#poster {
+  background: linear-gradient(180deg,
+      var(--navy),
+      var(--deep-blue));
+}
+
+.poster-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* PDF viewer */
+.poster-frame {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 12px;
+  background: black;
+}
+
+/* Download card aligned nicely */
+.poster-actions {
+  max-width: 400px;
+}
+
 
 /* FOOTER */
 .footer {
