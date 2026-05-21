@@ -18,7 +18,7 @@ body {
   background: radial-gradient(
     var(--navy),
     var(--deep-blue),
-    var(--white)
+    var(--soft-pink)
   );
   color: var(--lavender);
   line-height: 1.6;
