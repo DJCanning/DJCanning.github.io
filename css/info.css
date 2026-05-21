@@ -161,6 +161,43 @@ li {
   border-radius: 50%;
 }
 
+#downloads2 {
+  background: linear-gradient(180deg,
+      var(--deep-blue),
+      var(--navy));
+}
+
+.download-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.download-grid a {
+  padding: 1.5rem;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  text-decoration: none;
+  color: var(--lavender);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.download-grid a span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--violet);
+}
+
+.download-grid a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
 
 /* FOOTER */
 .footer {
