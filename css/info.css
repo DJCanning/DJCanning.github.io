@@ -1,6 +1,4 @@
 :root {
-  
-:root {
   --lavender: #F2E6EE;
   --soft-pink: #FFCCF2;
   --violet: #977DFF;
@@ -17,15 +15,11 @@
 body {
   margin: 0;
   font-family: "Poppins", system-ui, sans-serif;
- 
-body {
   background: radial-gradient(
     var(--navy),
     var(--deep-blue),
     var(--white)
   );
-}
-
   color: var(--lavender);
   line-height: 1.6;
 }
