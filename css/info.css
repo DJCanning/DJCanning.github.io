@@ -228,7 +228,12 @@ li {
 }
 
 
-
+.poster-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 .poster-image {
   width: 100%;
   max-width: 900px;   /* 👈 THIS is the key line */
