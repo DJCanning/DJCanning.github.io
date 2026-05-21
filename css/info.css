@@ -229,12 +229,6 @@ li {
 
 /* ABOUT SECTION -------------------------------------- */
 
-#about {
-  background: linear-gradient(180deg,
-      var(--deep-blue),
-      var(--navy));
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
